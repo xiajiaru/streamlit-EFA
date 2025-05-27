@@ -1,0 +1,184 @@
+2025-05-28 03:55:04,251 - ERROR - 发生错误: 
+$x$
+^
+ParseException: Expected end of text, found '$'  (at char 0), (line:1, col:1)
+Traceback (most recent call last):
+  File "E:\Code\PythonProject\EFA\app.py", line 105, in <module>
+    plt.tight_layout(rect=[0, 0.1, 1, 0.95])
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\pyplot.py", line 2599, in tight_layout
+    gcf().tight_layout(pad=pad, h_pad=h_pad, w_pad=w_pad, rect=rect)
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\figure.py", line 3540, in tight_layout
+    engine.execute(self)
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\layout_engine.py", line 183, in execute
+    kwargs = get_tight_layout_figure(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\_tight_layout.py", line 266, in get_tight_layout_figure
+    kwargs = _auto_adjust_subplotpars(fig, renderer,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\_tight_layout.py", line 82, in _auto_adjust_subplotpars
+    bb += [martist._get_tightbbox_for_layout_only(ax, renderer)]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\artist.py", line 1411, in _get_tightbbox_for_layout_only
+    return obj.get_tightbbox(*args, **{**kwargs, "for_layout_only": True})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\_api\deprecation.py", line 454, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\axes\_base.py", line 4395, in get_tightbbox
+    ba = martist._get_tightbbox_for_layout_only(axis, renderer)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\artist.py", line 1411, in _get_tightbbox_for_layout_only
+    return obj.get_tightbbox(*args, **{**kwargs, "for_layout_only": True})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\axis.py", line 1352, in get_tightbbox
+    bb = self.label.get_window_extent(renderer)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\text.py", line 956, in get_window_extent
+    bbox, info, descent = self._get_layout(self._renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\text.py", line 381, in _get_layout
+    w, h, d = _get_text_metrics_with_cache(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\text.py", line 69, in _get_text_metrics_with_cache
+    return _get_text_metrics_with_cache_impl(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\text.py", line 77, in _get_text_metrics_with_cache_impl
+    return renderer_ref().get_text_width_height_descent(text, fontprop, ismath)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\backends\backend_agg.py", line 217, in get_text_width_height_descent
+    self.mathtext_parser.parse(s, self.dpi, prop)
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\mathtext.py", line 79, in parse
+    return self._parse_cached(s, dpi, prop, antialiased)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\mathtext.py", line 100, in _parse_cached
+    box = self._parser.parse(s, fontset, fontsize, dpi)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\_mathtext.py", line 2165, in parse
+    raise ValueError("\n" + ParseException.explain(err, 0)) from None
+ValueError: 
+$x$
+^
+ParseException: Expected end of text, found '$'  (at char 0), (line:1, col:1)
+2025-05-28 03:55:04,252 - ERROR - 发生错误: 
+
+^
+ParseException: exception raised in parse action  (at char 0), (line:1, col:1)
+Traceback (most recent call last):
+  File "E:\Code\PythonProject\EFA\app.py", line 105, in <module>
+    plt.tight_layout(rect=[0, 0.1, 1, 0.95])
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\pyplot.py", line 2599, in tight_layout
+    gcf().tight_layout(pad=pad, h_pad=h_pad, w_pad=w_pad, rect=rect)
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\figure.py", line 3540, in tight_layout
+    engine.execute(self)
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\layout_engine.py", line 183, in execute
+    kwargs = get_tight_layout_figure(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\_tight_layout.py", line 266, in get_tight_layout_figure
+    kwargs = _auto_adjust_subplotpars(fig, renderer,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\_tight_layout.py", line 82, in _auto_adjust_subplotpars
+    bb += [martist._get_tightbbox_for_layout_only(ax, renderer)]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\artist.py", line 1411, in _get_tightbbox_for_layout_only
+    return obj.get_tightbbox(*args, **{**kwargs, "for_layout_only": True})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\_api\deprecation.py", line 454, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\axes\_base.py", line 4395, in get_tightbbox
+    ba = martist._get_tightbbox_for_layout_only(axis, renderer)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\artist.py", line 1411, in _get_tightbbox_for_layout_only
+    return obj.get_tightbbox(*args, **{**kwargs, "for_layout_only": True})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\axis.py", line 1352, in get_tightbbox
+    bb = self.label.get_window_extent(renderer)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\text.py", line 956, in get_window_extent
+    bbox, info, descent = self._get_layout(self._renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\text.py", line 381, in _get_layout
+    w, h, d = _get_text_metrics_with_cache(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\text.py", line 69, in _get_text_metrics_with_cache
+    return _get_text_metrics_with_cache_impl(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\text.py", line 77, in _get_text_metrics_with_cache_impl
+    return renderer_ref().get_text_width_height_descent(text, fontprop, ismath)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\backends\backend_agg.py", line 217, in get_text_width_height_descent
+    self.mathtext_parser.parse(s, self.dpi, prop)
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\mathtext.py", line 79, in parse
+    return self._parse_cached(s, dpi, prop, antialiased)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\mathtext.py", line 100, in _parse_cached
+    box = self._parser.parse(s, fontset, fontsize, dpi)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\_mathtext.py", line 2165, in parse
+    raise ValueError("\n" + ParseException.explain(err, 0)) from None
+ValueError: 
+
+^
+ParseException: exception raised in parse action  (at char 0), (line:1, col:1)
+2025-05-28 03:57:48,910 - ERROR - 发生错误: 
+
+^
+ParseException: exception raised in parse action  (at char 0), (line:1, col:1)
+Traceback (most recent call last):
+  File "E:\Code\PythonProject\EFA\app.py", line 111, in <module>
+    st.pyplot(fig)
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\streamlit\runtime\metrics_util.py", line 397, in wrapped_func
+    result = non_optional_func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\streamlit\elements\pyplot.py", line 106, in pyplot
+    marshall(
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\streamlit\elements\pyplot.py", line 158, in marshall
+    fig.savefig(image, **kwargs)
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\figure.py", line 3390, in savefig
+    self.canvas.print_figure(fname, **kwargs)
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\backend_bases.py", line 2164, in print_figure
+    self.figure.draw(renderer)
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\artist.py", line 95, in draw_wrapper
+    result = draw(artist, renderer, *args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\figure.py", line 3154, in draw
+    mimage._draw_list_compositing_images(
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\image.py", line 132, in _draw_list_compositing_images
+    a.draw(renderer)
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\artist.py", line 72, in draw_wrapper
+    return draw(artist, renderer)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\axes\_base.py", line 3034, in draw
+    self._update_title_position(renderer)
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\axes\_base.py", line 2988, in _update_title_position
+    if title.get_window_extent(renderer).ymin < top:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\text.py", line 956, in get_window_extent
+    bbox, info, descent = self._get_layout(self._renderer)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\text.py", line 381, in _get_layout
+    w, h, d = _get_text_metrics_with_cache(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\text.py", line 69, in _get_text_metrics_with_cache
+    return _get_text_metrics_with_cache_impl(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\text.py", line 77, in _get_text_metrics_with_cache_impl
+    return renderer_ref().get_text_width_height_descent(text, fontprop, ismath)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\backends\backend_agg.py", line 217, in get_text_width_height_descent
+    self.mathtext_parser.parse(s, self.dpi, prop)
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\mathtext.py", line 79, in parse
+    return self._parse_cached(s, dpi, prop, antialiased)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\mathtext.py", line 100, in _parse_cached
+    box = self._parser.parse(s, fontset, fontsize, dpi)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\Code\PythonProject\EFA\venv\Lib\site-packages\matplotlib\_mathtext.py", line 2165, in parse
+    raise ValueError("\n" + ParseException.explain(err, 0)) from None
+ValueError: 
+
+^
+ParseException: exception raised in parse action  (at char 0), (line:1, col:1)

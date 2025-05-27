@@ -20,10 +20,13 @@ logging.basicConfig(
 )
 
 try:
-    # 设置matplotlib中文字体
-    matplotlib.rcParams['font.sans-serif'] = ['Microsoft YaHei', 'SimHei', 'DejaVu Sans']
-    matplotlib.rcParams['axes.unicode_minus'] = False
-    matplotlib.rcParams['mathtext.fontset'] = 'stix'
+    # 设置matplotlib中文字体和数学公式
+    plt.rcParams['font.sans-serif'] = ['Microsoft YaHei', 'SimHei', 'DejaVu Sans']
+    plt.rcParams['axes.unicode_minus'] = False
+    plt.rcParams['mathtext.fontset'] = 'cm'  # 使用Computer Modern字体
+    plt.rcParams['mathtext.rm'] = 'serif'    # 使用serif字体
+    plt.rcParams['mathtext.it'] = 'serif:italic'  # 使用斜体
+    plt.rcParams['mathtext.bf'] = 'serif:bold'    # 使用粗体
 
     # 设置页面标题
     st.set_page_config(
@@ -87,8 +90,8 @@ try:
 
     # 设置图形属性
     ax.set_title(f'{func_name}，阶数 $n={n}$ 的误差曲线', fontsize=18)
-    ax.set_xlabel(r'$x$', fontsize=16)
-    ax.set_ylabel(r'$f(x)-P_n(x)$', fontsize=16)
+    ax.set_xlabel('x', fontsize=16)  # 移除LaTeX格式
+    ax.set_ylabel('f(x)-P_n(x)', fontsize=16)  # 移除LaTeX格式
 
     # 设置y轴范围和对数坐标
     if use_log_scale:
